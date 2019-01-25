@@ -10,8 +10,7 @@ class Tarea extends Model
     protected $table = 'tarea';
     protected $primaryKey = 'id';
     protected $fillable = [
-        'descripcionTarea','porcentajeCumplimientotarea', 'estadoTarea','fechaCreacion','fecha',
-        'estrategia_id',
+        'descripcionTarea', 'estadoTarea','fechaCreacion','fecha','estrategia_id',
     ];
 
 

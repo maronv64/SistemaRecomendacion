@@ -10,7 +10,7 @@ class Estrategia extends Model
     protected $primaryKey = 'id';
     public $timestamps=false;
     protected $fillable = [
-        'descripcionEstrategia','fecha','recomendacionesusuarios_id' 
+        'descripcionEstrategia','fecha','porcentajeCumplimientoestrategia','recomendacionesusuarios_id' 
     ];
      
     public function  Recousuarios(){

@@ -41,7 +41,6 @@ class Tareas extends Controller
     {
         $tareaVar= new Tarea();
         $tareaVar->descripcionTarea= $request->descripcionTarea;      
-        $tareaVar->porcentajeCumplimientotarea= $request->porcentajeCumplimientotarea;
         $tareaVar->estadoTarea= $request->estadoTarea;      
         $tareaVar->fechaCreacion= $request->fechaCreacion;      
         $tareaVar->fecha= $request->fecha;
@@ -110,7 +109,6 @@ class Tareas extends Controller
     {
         $tareaVar=Tarea::find($id);
         $tareaVar->descripcionTarea= $request->descripcionTarea;      
-        $tareaVar->porcentajeCumplimientotarea= $request->porcentajeCumplimientotarea;
         $tareaVar->estadoTarea= $request->estadoTarea;      
         $tareaVar->fechaCreacion= $request->fechaCreacion;      
         $tareaVar->fecha= $request->fecha;

@@ -41,6 +41,7 @@ class Estrategias extends Controller
         $estrategiaVar= new Estrategia();
         $estrategiaVar->descripcionEstrategia= $request->descripcionEstrategia;      
         $estrategiaVar->fecha= $request->fecha;
+        $estrategiaVar->porcentajeCumplimientoestrategia= $request->porcentajeCumplimientoestrategia;
         $estrategiaVar->recomendacionesusuarios_id= $request->recomendacionesusuarios_id;
         $estrategiaVar->save();
         $estrategiaall=Estrategia::with(['RecousuariosV2'])->find($estrategiaVar->id);
@@ -116,6 +117,7 @@ public function preparactualizarEstrategia($id){
         $estrategiaVar=Estrategia::find($id);
         $estrategiaVar->descripcionEstrategia= $request->descripcionEstrategia;      
         $estrategiaVar->fecha= $request->fecha;
+        $estrategiaVar->porcentajeCumplimientoestrategia= $request->porcentajeCumplimientoestrategia;
         //$estrategiaVar->recomendacionesusuarios_id= $request->recomendacionesusuarios_id;
         
         if ($estrategiaVar->save()) {
